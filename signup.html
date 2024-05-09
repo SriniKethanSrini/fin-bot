@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Styles for the container and form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210205/pngtree-flat-business-login-box-login-page-image_544861.jpg'); /* Specify the path to your image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            height: 100vh; /* Ensure the background covers the entire viewport */
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #472dbb;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <p style="text-align: center;">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Dummy validation
+            if (!username.trim() || !password.trim()) {
+                alert("Username and password cannot be empty.");
+                return;
+            }
+
+            // Retrieve existing users from local storage or initialize empty array
+            var users = JSON.parse(localStorage.getItem("users")) || [];
+
+            // Check if username already exists
+            var existingUser = users.find(function(user) {
+                return user.username === username;
+            });
+
+            if (existingUser) {
+                alert("Username already exists. Please choose a different username.");
+                return;
+            }
+
+            // Add new user to the array
+            users.push({ username: username, password: password });
+
+            // Save updated users array to local storage
+            localStorage.setItem("users", JSON.stringify(users));
+
+            // Redirect to login page or perform any other action
+            alert("Sign up successful! You can now login.");
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

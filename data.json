@@ -1,0 +1,63 @@
+{
+    "greetings": ["Hello!", "Hi there!", "Greetings!", "Hey!", "Howdy!"],
+    "farewells": ["Goodbye!", "Farewell!", "See you later!", "Take care!", "Until next time!"],
+    "links": {
+        "example": "https://example.com",
+        "openai": "https://openai.com"
+    },
+    "pension_scheme": [
+        {
+            "name": "SecureRetire Pension Plan\n rate_of_interest: 5%",
+    
+            "details": "SecureRetire Pension Plan offers a guaranteed 5% interest rate on contributions. It provides a reliable retirement solution with flexible contribution options and tax benefits."
+        },
+        {
+            "name": "FlexiGrowth Pension Scheme",
+            "rate_of_interest": "Varies",
+            "details": "FlexiGrowth Pension Scheme offers a range of investment options with varying interest rates based on market performance. It allows for personalized retirement planning and potential for higher returns."
+        }
+    ],
+    "health scheme": [
+        {
+            "name": "HealthGuard Plus",
+            "rate_of_interest": "N/A",
+            "details": "HealthGuard Plus provides comprehensive healthcare coverage, including medical, dental, and vision benefits. It offers peace of mind with no co-pays for preventive care and access to a wide network of healthcare providers."
+        }
+    ],
+    "education scheme": [
+        {
+            "name": "Learn & Grow Education Fund",
+            "rate_of_interest": "N/A",
+            "details": "Learn & Grow Education Fund supports employees in pursuing higher education and skill development. It offers tuition reimbursement, scholarships, and training programs to empower personal and professional growth."
+        }
+    ],
+    "loans scheme": [
+        {
+            "name": "EasyFinance Personal Loans",
+            "rate_of_interest": "7%",
+            "details": "EasyFinance Personal Loans provide quick and hassle-free access to funds with a competitive interest rate of 7%. Whether for home renovations, debt consolidation, or emergencies, EasyFinance has you covered."
+        }
+    ],
+    "retirement scheme": [
+        {
+            "name": "GoldenYears Retirement Plan",
+            "rate_of_interest": "6%",
+            "details": "GoldenYears Retirement Plan offers a secure future with a guaranteed interest rate of 6%. It features employer-matched contributions and flexible investment options to maximize retirement savings."
+        }
+    ],
+    "employee assistance program": [
+        {
+            "name": "WellnessPlus EAP",
+            "rate_of_interest": "N/A",
+            "details": "WellnessPlus EAP provides confidential support and counseling services to employees and their families. From mental health resources to financial counseling, WellnessPlus promotes overall well-being and work-life balance."
+        }
+    ],
+    "transportation scheme": [
+        {
+            "name": "EcoCommute Travel Program",
+            "rate_of_interest": "N/A",
+            "details": "EcoCommute Travel Program encourages sustainable commuting habits with incentives for carpooling, biking, and using public transit. It aims to reduce environmental impact and promote a healthier lifestyle."
+        }
+    ]
+}
+

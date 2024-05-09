@@ -1,0 +1,943 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Added */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .section:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .top-buttons button {
+            margin-left: 10px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .top-buttons button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .chatbot img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .chatbot .description {
+            position: absolute;
+            bottom: 0;
+            left: -150px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 14px;
+            transform: translateX(110%);
+            transition: transform 0.5s ease;
+        }
+        .chatbot:hover .description {
+            transform: translateX(0);
+        }
+        .language-options {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            display: none;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .language-options button {
+            display: block;
+            margin-bottom: 5px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .language-options button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot:hover .language-options {
+            display: block;
+        }
+        .about-button {
+            position: absolute;
+            right:1200px;
+        }
+        .about-text {
+            display: none;
+            background-color: rgba(11, 11, 11, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Government Schemes</h1>
+        <div class="top-buttons">
+            <button class="about-button" onclick="toggleAbout()">About</button>
+            <button onclick="window.location.href = 'Central GV scheme.pdf';">Scheme documents</button>
+            <button onclick="window.location.href = 'https://www.tn.gov.in/ta/announcements/';">Government Blogs</button>
+            <button onclick="toggleLanguages();">Language</button> -->
+            <!-- <div class="language-options">
+                <button onclick="window.location.href = 'tamil.html';">தமிழ்</button>
+                <button onclick="window.location.href = 'hindi.html';">हिंदी</button>
+                <button onclick="window.location.href = 'telugu.html';">తెలుగు</button>
+            </div> --> 
+        <!-- </div>
+        <div class="about-text" id="about-text">
+            <p>This page is for government scheme details and query solving.</p>
+        </div>
+    </header>
+    <section class="pension section" style="background-color: rgba(255, 153, 0, 0.6);">
+        <h2>Pension Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-pension-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-pension-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-pension-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-pension-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-pension-5.html';">Scheme 5</button>
+    </section>
+    <section class="health section" style="background-color: rgba(255, 0, 102, 0.6);">
+        <h2>Health Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-health-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-health-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-health-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-health-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-health-5.html';">Scheme 5</button>
+    </section>
+    <section class="education section" style="background-color: rgba(0, 153, 255, 0.6);">
+        <h2>Education Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-education-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-education-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-education-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-education-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-education-5.html';">Scheme 5</button>
+    </section>
+    <section class="loans section" style="background-color: rgba(255, 51, 51, 0.6);">
+        <h2>Loan Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-loans-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-loans-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-loans-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-loans-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-loans-5.html';">Scheme 5</button>
+    </section>
+    <div class="chatbot">
+        <img src="chatbot.png" alt="Chatbot" onclick="window.location.href = 'chatbot.html';">
+        <div class="description">For queries and details about various schemes, you can contact me.</div>
+    </div>
+    <script>
+        function toggleLanguages() {
+            var options = document.querySelector('.language-options');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleAbout() {
+            var aboutText = document.getElementById('about-text');
+            aboutText.style.display = aboutText.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>   -->
+
+
+
+
+ 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Added */
+        }
+        header {
+            background-color:black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .section:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .top-buttons button {
+            margin-left: 10px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .top-buttons button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .chatbot img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .chatbot .description {
+            position: absolute;
+            bottom: 0;
+            left: -150px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 14px;
+            transform: translateX(110%);
+            transition: transform 0.5s ease;
+        }
+        .chatbot:hover .description {
+            transform: translateX(0);
+        }
+        .language-options {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            display: none;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .language-options button {
+            display: block;
+            margin-bottom: 5px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .language-options button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot:hover .language-options {
+            display: block;
+        }
+        .about-button {
+            position: absolute;
+            right:1200px;
+        }
+        .about-text {
+            display: none;
+            background-color: rgba(11, 11, 11, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for close button */
+        .close-btn {
+            position: fixed;
+            top:245px;
+            right: 35px;
+            width:40px;
+            height: 45px;
+            border: none;
+            background-color: #060606;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 25px;
+            text-align: center;
+            z-index: 9999; /* Ensure button appears above iframe */
+            display: none; /* Initially hidden */
+        }
+        .close-btn:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Government Schemes</h1>
+        <div class="top-buttons">
+            <button class="about-button" onclick="toggleAbout()">About</button>
+            <button onclick="window.location.href = 'Central GV scheme.pdf';">Scheme documents</button>
+            <button onclick="window.location.href = 'https://www.tn.gov.in/ta/announcements/';">Government Blogs</button>
+            <button onclick="toggleLanguages();">Language</button>
+              <div class="language-options">
+                <button onclick="window.location.href = 'tamil.html';">Tamil</button>
+                <button onclick="window.location.href = 'hindi.html';">Hindi</button>
+                <button onclick="window.location.href = 'telugu.html';">Telugu</button>
+            </div>  
+        </div>
+        <div class="about-text" id="about-text">
+            <p>This page is for government scheme details and query solving.</p>
+        </div>
+    </header>
+    <section class="pension section" style="background-color: rgba(237, 236, 235, 0.6);">
+        <h2>Pension Schemes</h2>
+       
+     <div class="scheme-heading"onclick="window.location.href = 'scheme-details-pension-1.html';">Scheme 1</div>
+     <div class="scheme-heading"onclick="window.location.href = 'scheme-details-pension-2.html';">Scheme 2</div>
+     <div class="scheme-heading"onclick="window.location.href = 'scheme-details-pension-3.html';">Scheme 3</div>
+     <div class="scheme-heading"onclick="window.location.href = 'scheme-details-pension-4.html';">Scheme 4</div>
+     <div class="scheme-heading"onclick="window.location.href = 'scheme-details-pension-5.html';">Scheme 5</div>
+   
+    </section>
+    <section class="pension section" style="background-color: rgba(237, 236, 235, 0.6);">
+        
+        <h2>Health Schemes</h2>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-health-1.html';">Scheme 1</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-health-2.html';">Scheme 2</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-health-3.html';">Scheme 3</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-health-4.html';">Scheme 4</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-health-5.html';">Scheme 5</div>
+      
+    </section>
+    <section class="education section" style="background-color: rgba(237, 236, 235, 0.6);">
+        <h2>Education Schemes</h2>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-education-1.html';">Scheme 1</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-education-2.html';">Scheme 2</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-education-3.html';">Scheme 3</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-education-4.html';">Scheme 4</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-education-5.html';">Scheme 5</div>
+       
+    </section>
+    <section class="loans section" style="background-color:rgba(237, 236, 235, 0.6);"> 
+        <h2>Loan Schemes</h2>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-loans-1.html';">Scheme 1</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-loans-2.html';">Scheme 2</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-loans-3.html';">Scheme 3</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-loans-4.html';">Scheme 4</div>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-loans-5.html';">Scheme 5</div>
+
+        
+       
+    </section>
+    <div class="chatbot">
+        <img src="chatbot.png" alt="Chatbot" onclick="openChatbot()">
+        <div class="description">For queries and details about various schemes, you can contact me.</div>
+    </div>
+    
+    <iframe id="chatbotFrame" style="display:none; position: fixed; bottom: 20px; right: 20px; width: 400px; height: 500px; border: none;"></iframe>
+
+    <script>
+        function toggleLanguages() {
+            var options = document.querySelector('.language-options');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleAbout() {
+            var aboutText = document.getElementById('about-text');
+            aboutText.style.display = aboutText.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Function to open chatbot link in hidden iframe
+        function openChatbot() {
+            // Get the iframe element
+            var iframe = document.getElementById('chatbotFrame');
+            // Set the source of the iframe to the desired link
+            iframe.src = 'https://mediafiles.botpress.cloud/670c0594-a57f-4a59-80aa-76821b6a3a88/webchat/bot.html';
+            // Show the iframe
+            iframe.style.display = 'block';
+
+            // Create close button for the iframe
+            var closeButton = document.createElement('button');
+            closeButton.className = 'close-btn';
+            closeButton.innerText = 'X';
+            closeButton.onclick = function() {
+                // Hide the iframe when the close button is clicked
+                iframe.style.display = 'none';
+                // Hide the close button itself
+                closeButton.style.display = 'none';
+            };
+            // Append the close button to the body of the document
+            document.body.appendChild(closeButton);
+            // Show the close button
+            closeButton.style.display = 'block';
+        }
+    </script>
+</body>
+</html>  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Added */
+        }
+        header {
+            background-color:rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: calc(50% - 40px); /* Adjusted width */
+            display: inline-block; /* Added */
+            vertical-align: top; /* Added */
+        }
+        h2 {
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .scheme-heading {
+            cursor: pointer;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .scheme-heading:hover {
+            background-color: #f0f0f0;
+        }
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .top-buttons button {
+            margin-left: 10px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .top-buttons button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .chatbot img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .chatbot .description {
+            position: absolute;
+            bottom: 0;
+            left: -150px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 14px;
+            transform: translateX(110%);
+            transition: transform 0.5s ease;
+        }
+        .chatbot:hover .description {
+            transform: translateX(0);
+        }
+        .language-options {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            display: none;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .chatbot:hover .language-options {
+            display: block;
+        }
+        .about-button {
+            position: absolute;
+            right: 1500px;
+        }
+        .about-text {
+            display: none;
+            background-color: rgba(11, 11, 11, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for close button */
+        .close-btn {
+            position: fixed;
+            top:380px;
+            right: 27px;
+            width:40px;
+            height: 45px;
+            border: none;
+            background-color: #060606;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 14px;
+            line-height:25px;
+            text-align: center;
+            z-index: 9999; /* Ensure button appears above iframe */
+            display: none; /* Initially hidden */
+        }
+        .close-btn:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Government Schemes</h1>
+        <div class="top-buttons">
+            <button class="about-button" onclick="toggleAbout()">About</button>
+            <button onclick="window.location.href = 'Central GV scheme.pdf';">Scheme documents</button>
+            <button onclick="window.location.href = 'https://www.tn.gov.in/ta/announcements/';">Government Blogs</button>
+        </div>
+        <div class="about-text" id="about-text">
+            <p>This page is for government scheme details and query solving.</p>
+        </div>
+    </header>
+    <section class="pension" style="background-color: grey;">
+        <h2>Pension Schemes</h2>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-pension-1.html';">Scheme 1</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-pension-2.html';">Scheme 2</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-pension-3.html';">Scheme 3</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-pension-4.html';">Scheme 4</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-pension-5.html';">Scheme 5</div>
+    </section>
+    <section class="health" style="background-color: rgb(193, 208, 216);">
+        <h2>Health Schemes</h2>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-health-1.html';">Scheme 1</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-health-2.html';">Scheme 2</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-health-3.html';">Scheme 3</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-health-4.html';">Scheme 4</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-health-5.html';">Scheme 5</div>
+    </section>
+    <section class="education" style="background-color: rgb(134, 202, 157);">
+        <h2>Education Schemes</h2>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-education-1.html';">Scheme 1</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-education-2.html';">Scheme 2</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-education-3.html';">Scheme 3</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-education-4.html';">Scheme 4</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-education-5.html';">Scheme 5</div>
+    </section>
+    <section class="loans" style="background-color: rgb(148, 176, 232);">
+        <h2>Loan Schemes</h2>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-loans-1.html';">Scheme 1</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-loans-2.html';">Scheme 2</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-loans-3.html';">Scheme 3</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-loans-4.html';">Scheme 4</div>
+        <div class="scheme-heading" onclick="window.location.href = 'scheme-details-loans-5.html';">Scheme 5</div>
+    </section>
+
+    <div class="chatbot">
+        <img src="chatbot.png" alt="Chatbot" onclick="openChatbot()">
+        <div class="description">For queries and details about various schemes, you can contact me.</div>
+    </div>
+    
+    <iframe id="chatbotFrame" style="display:none; position: fixed; bottom: 20px; right: 20px; width: 500px; height: 400px; border:white;"></iframe>
+
+    <script>
+        function toggleLanguages() {
+            var options = document.querySelector('.language-options');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleAbout() {
+            var aboutText = document.getElementById('about-text');
+            aboutText.style.display = aboutText.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Function to open chatbot link in hidden iframe
+        function openChatbot() {
+            // Get the iframe element
+            var iframe = document.getElementById('chatbotFrame');
+            // Set the source of the iframe to the desired link
+            iframe.src = 'https://mediafiles.botpress.cloud/670c0594-a57f-4a59-80aa-76821b6a3a88/webchat/bot.html';
+            // Show the iframe
+            iframe.style.display = 'block';
+
+            // Create close button for the iframe
+            var closeButton = document.createElement('button');
+            closeButton.className = 'close-btn';
+            closeButton.innerText = 'X';
+            closeButton.onclick = function() {
+                // Hide the iframe when the close button is clicked
+                iframe.style.display = 'none';
+                // Hide the close button itself
+                closeButton.style.display = 'none';
+            };
+            // Append the close button to the body of the document
+            document.body.appendChild(closeButton);
+            // Show the close button
+            closeButton.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        header {
+            background-color:black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .section:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .top-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .top-buttons button {
+            margin-left: 10px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .top-buttons button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .chatbot img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .chatbot .description {
+            position: absolute;
+            bottom: 0;
+            left: -150px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            font-size: 14px;
+            transform: translateX(110%);
+            transition: transform 0.5s ease;
+        }
+        .chatbot:hover .description {
+            transform: translateX(0);
+        }
+        .language-options {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            display: none;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .language-options button {
+            display: block;
+            margin-bottom: 5px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .language-options button:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+        .chatbot:hover .language-options {
+            display: block;
+        }
+        .about-button {
+            position: absolute;
+            right:1200px;
+        }
+        .about-text {
+            display: none;
+            background-color: rgba(11, 11, 11, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for close button */
+        .close-btn {
+            position: fixed;
+            top:245px;
+            right: 35px;
+            width:40px;
+            height: 45px;
+            border: none;
+            background-color: #060606;
+            color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 25px;
+            text-align: center;
+            z-index: 9999; /* Ensure button appears above iframe */
+            display: none; /* Initially hidden */
+        }
+        .close-btn:hover {
+            background-color: #999;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Government Schemes</h1>
+        <div class="top-buttons">
+            <button class="about-button" onclick="toggleAbout()">About</button>
+            <button onclick="window.location.href = 'Central GV scheme.pdf';">Scheme documents</button>
+            <button onclick="window.location.href = 'https://www.tn.gov.in/ta/announcements/';">Government Blogs</button>
+            <button onclick="toggleLanguages();">Language</button>
+             <div class="language-options">
+                <button onclick="window.location.href = 'tamil.html';">Tamil</button>
+                <button onclick="window.location.href = 'hindi.html';">Hindi</button>
+                <button onclick="window.location.href = 'telugu.html';">Telugu</button>
+            </div> 
+        </div>
+        <div class="about-text" id="about-text">
+            <p>This page is for government scheme details and query solving.</p>
+        </div>
+    </header>
+    <section class="pension section" style="background-color: rgba(255, 153, 0, 0.6);">
+        <h2>Pension Schemes</h2>
+        <div class="scheme-heading"onclick="window.location.href = 'scheme-details-health-1.html';">Scheme 1</div>
+        <div class="scheme-heading">Scheme 2</div>
+        <div class="scheme-heading">Scheme 3</div>
+        <div class="scheme-heading">Scheme 4</div>
+        <div class="scheme-heading">Scheme 5</div>
+    </section>
+    <section class="health section" style="background-color: rgba(255, 0, 102, 0.6);">
+        <h2>Health Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-health-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-health-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-health-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-health-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-health-5.html';">Scheme 5</button>
+    </section>
+    <section class="education section" style="background-color: rgba(0, 153, 255, 0.6);">
+        <h2>Education Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-education-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-education-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-education-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-education-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-education-5.html';">Scheme 5</button>
+    </section>
+    <section class="loans section" style="background-color: rgba(255, 51, 51, 0.6);">
+        <h2>Loan Schemes</h2>
+        <button onclick="window.location.href = 'scheme-details-loans-1.html';">Scheme 1</button>
+        <button onclick="window.location.href = 'scheme-details-loans-2.html';">Scheme 2</button>
+        <button onclick="window.location.href = 'scheme-details-loans-3.html';">Scheme 3</button>
+        <button onclick="window.location.href = 'scheme-details-loans-4.html';">Scheme 4</button>
+        <button onclick="window.location.href = 'scheme-details-loans-5.html';">Scheme 5</button>
+    </section>
+    <div class="chatbot">
+        <img src="chatbot.png" alt="Chatbot" onclick="openChatbot()">
+        <div class="description">For queries and details about various schemes, you can contact me.</div>
+    </div>
+    
+    <iframe id="chatbotFrame" style="display:none; position: fixed; bottom: 20px; right: 20px; width: 400px; height: 500px; border: none;"></iframe>
+
+    <script>
+        function toggleLanguages() {
+            var options = document.querySelector('.language-options');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleAbout() {
+            var aboutText = document.getElementById('about-text');
+            aboutText.style.display = aboutText.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Function to open chatbot link in hidden iframe
+        function openChatbot() {
+            // Get the iframe element
+            var iframe = document.getElementById('chatbotFrame');
+            // Set the source of the iframe to the desired link
+            iframe.src = 'https://mediafiles.botpress.cloud/670c0594-a57f-4a59-80aa-76821b6a3a88/webchat/bot.html';
+            // Show the iframe
+            iframe.style.display = 'block';
+
+            // Create close button for the iframe
+            var closeButton = document.createElement('button');
+            closeButton.className = 'close-btn';
+            closeButton.innerText = 'X';
+            closeButton.onclick = function() {
+                // Hide the iframe when the close button is clicked
+                iframe.style.display = 'none';
+                // Hide the close button itself
+                closeButton.style.display = 'none';
+            };
+            // Append the close button to the body of the document
+            document.body.appendChild(closeButton);
+            // Show the close button
+            closeButton.style.display = 'block';
+        }
+    </script>
+</body>
+</html> -->

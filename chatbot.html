@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Scheme Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cbc7c7; /* Changed background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #chat-container {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            border: 2px solid #3c3d3e; /* Added border */
+        }
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center title and image */
+            margin-bottom: 20px;
+        }
+        #header h2 {
+            font-size: 18px; /* Larger font size */
+            color: #616a73; /* Blue color */
+            font-weight: bold; /* Bold text */
+            margin-right: 10px;
+            text-transform: uppercase; /* Uppercase text */
+            font-family: 'Times New Roman', Times, serif; /* Times New Roman font */
+            text-shadow: 1px 1px 1px #efecec; /* Text shadow for better visibility */
+        }
+        #header img {
+            width: 50px;
+            height: auto;
+        }
+        #chat-log {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: calc(100% - 70px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+        button {
+            padding: 8px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .user-message {
+            background-color: #8fb9e7; /* Light blue background for user messages */
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+        .bot-message {
+            background-color: #c1a0a0; /* Light gray background for bot messages */
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+        a {
+            color: black;
+            text-decoration: none; /* Removed turquoise */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="header">
+            <h2>Government Scheme Chatbot</h2>
+            <img src="chatbot-icon.png" alt="Chatbot Icon">
+        </div>
+        <div id="chat-log"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
